@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The 2024 U.S. Elections</title>
+    <link rel="stylesheet" href="Elections.css">
+</head>
+<body>
+
+    <div class="age" id="userAge">
+        <!-- YEAR -->
+        <label for="year">Year you were born:</label>
+        <select id="year"></select>
+          <script>
+                const myYear = document.getElementById('year');
+            
+            for (let year = 2025; year > 1970; year--) {
+                const option = document.createElement('option');
+              option.value = year;
+              option.textContent = year;
+              myYear.appendChild(option);
+            }
+            </script><br>
+        
+        <!-- MONTH -->
+        <label for="month">Month you were born: </label>
+          <select id="month"></select>
+            <script>
+                  const myMonth = document.getElementById('month');
+              
+                   const monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+              
+                for (let month = 0; month < monthArray.length; month++) {
+                  const option = document.createElement('option');
+                option.value = monthArray[month];
+                option.textContent = monthArray[month];
+                myMonth.appendChild(option);
+              }
+            </script><br>
+          
+        <!-- DAY -->
+        <label for="day">Day you were born: </label>
+          <select id="day"></select>
+            <script>
+                const myDay = document.getElementById('day');
+              for (let day = 1; day <= 31; day++) {
+                  const option = document.createElement('option');
+                option.value = day;
+                option.textContent = day;
+                myDay.appendChild(option);
+              }
+            </script><br>
+            
+       <button id='submbitBirth' onclick="validation()">Submit</button>
+       
+         <!-- IMAGEN -->
+       <img class ="hide" id="image" onclick="userInformation()" src="https://www.hartlandtwp.com/sites/default/files/styles/full_node_primary/public/imageattachments/clerk/page/1651/vote.jpg?itok=NmNlvjtj">
+      </div>
+      
+      
+      <p id="text">Let's participate in the 2024 Presidential Elections.</p>
+      <div id="author">Made by: Jonathan Boyer</div>
+      
+      
+      <div class='hide' id='credentials'>
+          <div class='userName'>First name <br><input id="first"></div>
+          <div class='userName'>Last name <br><input id="surname"></div>
+          <div class='userName'>Social Security Number <br><input id="SSN"></div>
+          
+          <button id='submitName' onclick="registration()">Submit</button>
+      </div>
+      
+      
+      <div class='hide' id='presidentSelection'>
+          <label for="president">Choose a candidate: </label><br>
+              <select id="president"></select>
+                  <script>
+                          const myPresident = document.getElementById('president');
+                      
+                      const presidentArray = ['--Select a president', 'Chase Oliver', 'Donald Trump', 'Howie Hawkins', 'Jill Stein', 'Jo Jorgensen', 'Joseph Biden', 'Kamala Harris', 'Marianne Williamson', 'Spike Cohen'];
+                      
+                      for (let president = 0; president < presidentArray.length; president++) {
+                          const option = document.createElement('option');
+                        option.value = presidentArray[president];
+                        option.textContent = presidentArray[president];
+                        myPresident.appendChild(option);
+                      }
+                  </script>
+      </div>      
+    <script src="Elections.js"></script>
+</body>
+</html>

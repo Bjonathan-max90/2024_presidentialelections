@@ -1,0 +1,64 @@
+#year {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#month {
+    margin-left: 7px;
+    margin-top: 5px;
+}
+#day {
+    margin-left: 23px;
+    margin-top: 5px;
+    padding-left: 1px;
+}
+.age {
+    margin-left: 7px;
+}
+.hide {
+  display: none;
+}
+
+p {
+    margin-left: 10px;
+    margin-bottom: 25px;
+    transform: translate(0, 50px)
+}
+button[id='submbitBirth'] {
+    transform: translate(275px, -66px)
+}
+button[id='submitName'] {
+    transform: translate(385px, -80px)
+}
+.userName {
+    margin-left: 385px;
+    margin-bottom: 10px;
+    transform: translate(0, -140px)
+    }
+#presidentSelection {
+    margin-left: 385px;
+    transform: translate(0, -160px);
+}
+#author {
+    margin-left: 600px;
+    margin-top: 250px;
+    font-size: 12px;
+    font-family: "Lucida console";
+    color: blue;
+}
+    
+img {
+    position: absolute;
+    border: 1px solid rgba(0%, 0%, 0%, 1);
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    
+    width: 70px;
+    margin-left: 210px;
+    margin-top: -30px;
+    transition: transform 0.3s ease;
+        }
+img:hover {
+    transform: scale(1.1)
+               rotate(10deg);            
+
+}
